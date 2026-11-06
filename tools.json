@@ -1,11 +1,19 @@
 {
   "site": {
     "name": "Vertex Pakistan",
-    "title": "Vertex Pakistan workspace",
-    "intro": "HR, call quality and customer records for the WaveTech and Zentro floors. Pick a tool to sign in.",
+    "title": "Payroll, call quality and customers for the WaveTech and Zentro floors",
+    "intro": "Sign in to HR, QA or CRM. Each card shows whether its tool is online right now.",
     "clocks": [
-      { "label": "Karachi", "short": "PK", "timeZone": "Asia/Karachi" },
-      { "label": "New York", "short": "NY", "timeZone": "America/New_York" }
+      {
+        "label": "Karachi",
+        "short": "PK",
+        "timeZone": "Asia/Karachi"
+      },
+      {
+        "label": "New York",
+        "short": "NY",
+        "timeZone": "America/New_York"
+      }
     ]
   },
   "tools": [

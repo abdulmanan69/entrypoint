@@ -41,7 +41,7 @@
     --paper: #232323;
     --ink: #ededed;
     --ink-2: #a3a3a3;
-    --ink-3: #7a7a7a;
+    --ink-3: #85858b;
     --line: rgba(255, 255, 255, 0.08);
     --line-strong: rgba(255, 255, 255, 0.16);
     --brand: #8f9be0;
@@ -163,7 +163,7 @@ main {
 }
 
 .intro {
-  max-width: 560px;
+  max-width: 720px;
   margin-bottom: 40px;
 }
 
@@ -402,9 +402,8 @@ kbd {
 .sheet {
   background: var(--paper);
   border-radius: 10px;
-  padding: 12px 14px;
+  padding: 12px 16px;
   box-shadow: var(--sheet-shadow);
-  transition: transform 300ms var(--ease);
 }
 
 .sheet-head,
@@ -425,10 +424,6 @@ kbd {
 /* payslip */
 .slip {
   transform: rotate(-1.5deg);
-}
-
-.app:hover .slip {
-  transform: rotate(0deg);
 }
 
 .slip-row {
@@ -572,7 +567,6 @@ kbd {
   font-size: 11px;
   line-height: 1.3;
   white-space: nowrap;
-  transition: transform 300ms var(--ease);
 }
 
 .deal > span {
@@ -588,10 +582,6 @@ kbd {
 
 .deal.won {
   box-shadow: inset 0 0 0 1px var(--t-ink), var(--sheet-shadow);
-}
-
-.app:hover .deal.won {
-  transform: translateY(-2px);
 }
 
 /* window: the generic preview for new tools */
@@ -615,7 +605,7 @@ kbd {
 }
 
 .window-title {
-  padding: 12px 14px 8px;
+  padding: 12px 16px 8px;
   font-weight: 500;
 }
 
@@ -623,7 +613,7 @@ kbd {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0 14px;
+  padding: 0 16px;
 }
 
 .window-lines span {
@@ -634,10 +624,6 @@ kbd {
 
 .window-lines .accent-line {
   background: var(--t-ink);
-}
-
-.app:hover .window {
-  transform: translateY(-2px);
 }
 
 /* footer */
@@ -736,4 +722,9 @@ kbd {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.mark .mark-dot {
+  stroke: var(--bg);
+  stroke-width: 1.5;
 }
