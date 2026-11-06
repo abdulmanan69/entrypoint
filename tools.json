@@ -1,0 +1,37 @@
+{
+  "site": {
+    "name": "Vertex Pakistan",
+    "title": "Vertex Pakistan workspace",
+    "intro": "HR, call quality and customer records for the WaveTech and Zentro floors. Pick a tool to sign in.",
+    "clocks": [
+      { "label": "Karachi", "short": "PK", "timeZone": "Asia/Karachi" },
+      { "label": "New York", "short": "NY", "timeZone": "America/New_York" }
+    ]
+  },
+  "tools": [
+    {
+      "name": "HR",
+      "url": "https://hr.vertexpakistan.com",
+      "key": "h",
+      "description": "Staff records, leave, payroll, payslips and sales incentives.",
+      "preview": "payslip",
+      "tint": "indigo"
+    },
+    {
+      "name": "QA",
+      "url": "https://qa.vertexpakistan.com",
+      "key": "q",
+      "description": "Call recordings, scorecards, transfers and agent quality from VICIdial.",
+      "preview": "call",
+      "tint": "green"
+    },
+    {
+      "name": "CRM",
+      "url": "https://crm.vertexpakistan.com",
+      "key": "c",
+      "description": "Customers, leads, callbacks and the deals each team is working.",
+      "preview": "pipeline",
+      "tint": "amber"
+    }
+  ]
+}

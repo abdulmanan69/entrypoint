@@ -1,0 +1,12 @@
+{
+  "name": "vertex-entrypoint",
+  "private": true,
+  "description": "vertexpakistan.com: the front door to the company's tools",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "dev": "node scripts/serve.mjs"
+  }
+}

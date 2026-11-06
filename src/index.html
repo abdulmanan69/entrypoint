@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{SITE_NAME}}</title>
+    <meta name="description" content="{{SITE_TITLE}}: {{TOOL_NAMES}} in one place." />
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css?v={{VERSION}}" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <a class="logo" href="/" aria-label="{{SITE_NAME}} home">
+          <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4 21 19H3Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+            <circle cx="12" cy="4" r="2.25" class="mark-dot" />
+          </svg>
+          <span>{{SITE_NAME}}</span>
+        </a>
+        <div class="clocks" aria-label="Local times">{{CLOCKS}}</div>
+      </header>
+
+      <main>
+        <section class="intro">
+          <h1>{{SITE_TITLE}}</h1>
+          <p>{{SITE_INTRO}}</p>
+        </section>
+
+        <section class="apps apps-{{TOOL_COUNT}}" aria-label="Tools">
+{{TOOLS}}
+        </section>
+      </main>
+
+      <footer class="foot">
+        <span>© <span id="year">{{YEAR}}</span> {{SITE_NAME}}</span>
+        <span class="muted">Press {{SHORTCUTS}} to open a tool</span>
+      </footer>
+    </div>
+    <script src="app.js?v={{VERSION}}" defer></script>
+  </body>
+</html>
